@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com HTML5 e CSS3</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!--Formulário-->
+    <form method="POST" action="" tabindex="1">
+        <h2>Cadastro</h2>
+        <fieldset>
+            <!--Os campos de entrada são obrigatórios, assim como os de seleção-->
+            <label>Nome</label>
+            <input type="text" name="nome" class="input" required>
+        </fieldset>
+
+        <fieldset>
+            <label>Email</label>
+            <input type="email" name="email" class="input" required>
+        </fieldset>
+
+        <fieldset>
+            <!--O campo de senha aceita apenas 12 carácteres e esconde a senha-->
+            <label>Senha</label><input type="password" maxlength="12" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>Qual seu sexo?</label>
+            <br>
+            <br>
+            <div>
+                <!--O name do input deve ter o mesmo conteúdo para marcar apenas uma das opções-->
+                <input type="radio" name="select-gênero" value="masculino" id="masculino" required>
+                <label>Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="select-gênero" value="feminino" id="Feminino" required>
+                <label>Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="select-gênero" value="pref" id="Prefn" required>
+                <label>Prefiro não dizer</label>
+            </div>
+
+        </fieldset>
+
+        <!--Criando um menu drop-down-->
+        <fieldset>
+            <p>Quais produtos deseja comprar?</p>
+            <select class="menu-dropdown">
+                <!--Criando opções de seleção do menu drop-down-->
+                <option>Yakissoba</option>
+                <option>Hambúrguer</option>
+                <option>Contrafilé</option>
+            </select>
+        </fieldset>
+        <!--O campo de avaliação aceita 200 carácteres-->
+        <fieldset>
+            <label>Conte nos um pouco sobre você</label>
+            <textarea maxlength="200" placeholder="Digite sua mensagem aqui..."></textarea>
+        </fieldset>
+
+        <div class="botões">
+            <button type="submit" class="button">Enviar</button>
+            <button type="reset" class="button">Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>

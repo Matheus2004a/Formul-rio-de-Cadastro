@@ -1,0 +1,102 @@
+/*Centralizando o formulário*/
+form{
+    width: 500px;
+    height:745px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    background:#F0F8FF;
+    box-shadow: 3px 3px 3px 3px  lightgray;
+}
+form:focus{
+    outline: none;
+}
+
+/*Centralizando o título do formulário*/
+h2{
+    text-align: center;
+    color: #8200eb;
+}
+
+
+fieldset{
+    border: none;
+}
+
+input{
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+/*Todos os campos de entrada de texto, menu drop-don e área de avaliação terão borda arredondada*/
+input:not([type="radio"]), .menu-dropdown, textarea{
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+/*Todos os campos de entrada de texto, menu drop-down e área de avaliação terão borda roxa ao clicar neles*/
+input:not([type="radio"]):focus, .menu-dropdown:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #8200eb;
+}
+
+input:not([type="radio"]){
+    width: 320px;
+    height: 30px;
+    margin: 10px 15px;
+    text-indent: 10px;
+}
+
+input [type="radio"]:focus{
+    color: #8200eb;
+}
+
+.menu-dropdown {
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+}
+
+fieldset textarea{
+    margin-top: 15px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+textarea::placeholder{
+    font-size: 15px;
+}
+
+/*Centralizando os botões de enviar e resetar*/
+.botões{
+    text-align: center;
+}
+
+/*Dando opacidade para os botões de enviar e limpar*/
+.button {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+    background: #8200eb;
+    cursor: pointer;
+    margin: 20px 10px;
+    opacity: 0.85;
+}
+/*Ao passar o mouse sobre os dois botões, sua cor fica menos opaca*/
+.button:hover{
+    opacity: 1;
+}
+
+.button:focus{
+    outline: none;
+}
